@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download vCard</title>
+</head>
+<body>
+    <h1>Votre téléchargement va commencer automatiquement...</h1>
+    <script>
+        // Fonction pour télécharger automatiquement le fichier vCard
+        function downloadVCard() {
+            var link = document.createElement('a');
+            link.href = 'contact.vcf'; // Chemin relatif au fichier vCard
+            link.download = 'contact.vcf';
+            link.click();
+        }
+
+        // Appeler la fonction dès que la page est chargée
+        window.onload = function() {
+            downloadVCard();
+        };
+    </script>
+</body>
+</html>

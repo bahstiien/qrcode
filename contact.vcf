@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Nom;Prénom
+FN:Prénom Nom
+ORG:Organisation
+TITLE:Titre du poste
+TEL;TYPE=CELL:+123456789
+EMAIL:email@example.com
+ADR;TYPE=WORK:;;Adresse;Ville;Région;Code Postal;Pays
+URL:https://www.example.com
+END:VCARD
