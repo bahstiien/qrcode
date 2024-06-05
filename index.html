@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download vCard</title>
+    <title>Téléchargement vCard</title>
 </head>
 <body>
-    <h1>Votre téléchargement va commencer automatiquement...</h1>
+    <!-- Contenu de votre page -->
+
     <script>
-        // Fonction pour télécharger automatiquement le fichier vCard
+        // Fonction pour le téléchargement automatique de la vCard
         function downloadVCard() {
             var link = document.createElement('a');
             link.href = 'contact.vcf'; // Chemin relatif au fichier vCard
@@ -16,9 +17,16 @@
             link.click();
         }
 
-        // Appeler la fonction dès que la page est chargée
+        // Fonction pour la redirection après le téléchargement de la vCard
+        function redirectToSite() {
+            window.location.href = 'https://www.lex-insight.fr/';
+        }
+
+        // Appeler la fonction de téléchargement de la vCard dès que la page est chargée
         window.onload = function() {
             downloadVCard();
+            // Rediriger après un délai de 5 secondes (5000 millisecondes) après le téléchargement
+            setTimeout(redirectToSite, 5000);
         };
     </script>
 </body>
